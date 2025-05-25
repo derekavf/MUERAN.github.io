@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Persistente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="username-modal">
+        <div id="username-form">
+            <h2>Ingresa tu nombre</h2>
+            <p>Este nombre se mostrará en el chat</p>
+            <input type="text" id="username-input" placeholder="Tu nombre" autocomplete="off" required>
+            <button id="username-submit">Entrar al chat</button>
+        </div>
+    </div>
+
+    <div id="chat-container" class="hidden">
+        <div id="chat-header">
+            Chat Persistente - Bienvenido, <span id="display-username"></span>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-container">
+            <input type="text" id="message-input" placeholder="Escribe tu mensaje..." autocomplete="off">
+            <button id="send-button">Enviar</button>
+            <button id="clear-chat">Borrar chat</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
